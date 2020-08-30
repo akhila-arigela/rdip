@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>registration form</title>
+	<meta charset="utf-8">
+	<style>
+	.logo{
+			width: 200px;
+			height: 100px;
+		}
+		.link2{
+			display: inline-block;
+			float: right;
+			padding: 10px 30px 20px 30px;
+
+		}
+		nav{
+			width: 100%;
+			height: 30px;
+			background-color: orange;
+			color: black;
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+			line-height: 30px;
+			display: inline-block;
+			padding: 0px 20px;
+
+
+		}
+		ul li a{
+			text-decoration: none;
+		}
+		table{
+            
+            padding: 20px 40px 40px 10px;
+            line-height: 30px
+		}
+		.a{
+			border: 1px;
+			background-color: lightgrey;
+
+		}
+	</style>
+</head>
+<body>
+   <a  href="https://www.iiit.ac.in/"> <img src="https://www.iiit.ac.in/img/iiit-new.png" alt="iit-h logo" class="logo"> </a>
+    <a class="link2" href="https://serc.iiit.ac.in/rdip/"> <h2> RDIP </h2> </a>
+    <nav>
+    	<ul>
+    		<li><a href="homepage.html">Home</a></li>
+    		<li><a href="registration.html" >Registration Form</a></li>
+
+    	</ul>
+
+    </nav><br>
+    <form action="details.html" method="GET" >
+    	<table>
+        <tr> 
+        	<th><label for="fname">First name:</label></th>
+            <th><input type="text" id="fname" name="fname" placeholder="enter your first name" required></th>
+        </tr>
+        <tr> 
+        	<th><label for="email">E-mail:</label></th>
+            <th><input type="email" id="email" name="email" placeholder="enter your E-mail id" required ></th>
+        </tr>
+        <tr>
+        	<th><label for="phoNo">Phone No: </label></th>
+            <th><input id="phoNo" name="phoNo" type="tel" placeholder="phone no" required minlength="10" maxlength="10"></th>
+        </tr>
+        <tr>
+           <th><label>Gender:</label></th>
+           <th><input type="radio"  name="gender" value="male" id="male" required>
+        
+        	<label for="male">Male</label>
+            <input type="radio"  name="gender" value="female" id="female" required>
+        
+        
+        	<label for="female">Female</label>
+            <input type="radio"  name="gender" value="other" id="other" required>
+        
+         
+        	<label for="other">Other</label></th>
+        </tr>
+        <tr>
+        	<th> <label>Reason for RDIP:</label></th>
+            <th>
+            <input type="radio"  name="HTML" value="HTML" id="HTML">
+            <label for="HTML" >HTML</label>
+
+            <input type="radio"  name="CSS" value="CSS" id="CSS" required>
+            <label for="CSS" >CSS</label>
+            <input type="radio"  name="JavaScript" value="JavaScript" id="JavaScript">
+
+            <label for="JavaScript">JavaScript</label></th>
+       </tr>
+        <tr><th><label for="college">College:</label></th>
+            <th><input type="text" id="college" name="collage" placeholder="enter your college name" required></th></tr>
+        <tr>
+        	<th><input type="checkbox" id="agreement" name="subscribe" value="" required></th>
+            <th><label for="agreement">I declare above details given by me are true</label></th>
+        </tr>
+    
+        <tr>
+        	<th><input type="submit" value="Submit"></th>
+            
+            <th><input type="reset" value="reset"></th>
+        </tr>
+    </table>
+    
+
+        
+
+
+
+    </form>
+
+</body>
+</html>
